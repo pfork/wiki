@@ -4,10 +4,12 @@ site_description: public wiki for the PITCHFORK!!5! project
 copyright: 2017 (c) team PITCHFORK & contributors, CC-By-Sa 3.5
 theme: alabaster
 #theme_dir: alabaster
-site_dir: /tmp/wiki
+site_dir: /var/www/wiki
 markdown_extensions:
   - wikilinks
   - codehilite
 
 pages:
-  - ['index.md', 'Home']
+  - Home: 'index.md'
+  - 'Developer Manual': 'Developer_Manual.md'
+  - 'User Manual': 'User_Manual.md'
