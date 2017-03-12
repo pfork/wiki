@@ -14,3 +14,4 @@ There is a setup.sh in the firmware repository.
 ## Repositories
 
 - firmware
+- software
