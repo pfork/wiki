@@ -10,3 +10,5 @@ Welcome dear developers & contributors
 ## Software Requirements
 
 There is a setup.sh in the firmware repository.
+
+## Repositories
