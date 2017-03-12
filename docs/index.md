@@ -1,6 +1,9 @@
-# Welcome to MkDocs
+# Welcome to the PITCHFORK!!5! wiki
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Here you can find the
+
+* [[User Manual]]
+* [[Developer Manual]]
 
 ## Commands
 
