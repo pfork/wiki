@@ -8,3 +8,5 @@ Welcome dear developers & contributors
 - a jtag debugger (blackmagic prefered, you can flash your own for cheap on a discovery board)
 
 ## Software Requirements
+
+There is a setup.sh in the firmware repository.
