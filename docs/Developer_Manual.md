@@ -16,3 +16,4 @@ There is a setup.sh in the firmware repository.
 - firmware
 - software
 - hardware
+- wiki
