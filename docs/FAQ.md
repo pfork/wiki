@@ -3,7 +3,7 @@
 Understanding your PITCHFORK is essential: technology which is not understood, controls the user.
 
 ## What exactly is the threat model of the PITCHFORK?
-We have a [long document](Threatmodel.md) on this (which you should definitely read!), but to cut things short the mitigated threat-vector is recovering your keys from your laptop or your smartphone. And it allows you to keep physical contact with all your keys and secrets, while for example even going to a sauna and trying to maintain physical contact with your keys.
+We have a [wikipage](Threatmodel.md) on this (which you should definitely read!), but to cut things short the mitigated threat-vector is recovering your keys from your laptop or your smartphone. And it allows you to keep physical contact with all your keys and secrets, while for example even going to a sauna and trying to maintain physical contact with your keys.
 
 ## How is this different from my yubikey neo/cryptostick/nitrokey/etc?
 The PITCHFORK uses a powerful ARM Cortex-M3 processor for all operations, while the tools mentioned all are based on smartcards.

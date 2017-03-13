@@ -20,5 +20,7 @@ pages:
        - 'Firmware': 'Firmware.md'
        - 'Software': 'Software.md'
        - Hardware:
-            - 'Testing the hardware': 'Hardware_testing.md'
-            - 'Hardware measurements': "HW_measurements.md"
+           - 'USB form-factor': 'usb_token.md'
+           - 'Nokia3310 form-factor': 'nokia.md'
+           - 'Testing the hardware': 'Hardware_testing.md'
+           - 'Hardware measurements': "HW_measurements.md"
