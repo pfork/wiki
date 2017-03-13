@@ -11,5 +11,8 @@ markdown_extensions:
 
 pages:
   - Home: 'index.md'
-  - 'Developer Manual': 'Developer_Manual.md'
+  - 'Developer Manual':
+       - 'Repositories': 'Repositories.md'
+       - 'Firmware': 'Firmware.md'
+       - 'Software': 'Software.md'
   - 'User Manual': 'User_Manual.md'

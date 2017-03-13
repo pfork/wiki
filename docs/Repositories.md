@@ -1,16 +1,3 @@
-# Developer manual
-
-Welcome dear developers & contributors
-
-## Hardware Requirements
-
-- a PITCHFORK (or two)
-- a jtag debugger (blackmagic prefered, you can [flash your own for cheap on a discovery board](https://embdev.net/articles/STM_Discovery_as_Black_Magic_Probe))
-
-## Software Requirements
-
-There is a [setup.sh](../git/firmware/tree/setup.sh) in the firmware repository.
-
 ## Repositories
 
 Project PITCHFORK is compartmentalized into the following main repositories
@@ -27,3 +14,7 @@ Project PITCHFORK is compartmentalized into the following main repositories
 - [wiki](../git/wiki/) the wiki sources - you're reading the compiled version now!
 
 - [tests](../git/wiki/) tests - also handy as examples/useful snippets to be re-used
+
+These repos are hosted at pitchfork.ist, but secondary repos also
+exist at https://github.com/pfork - here you can also open issues or
+review the code.
