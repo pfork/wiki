@@ -15,7 +15,6 @@ extra:
   include_toc: yes
   extra_nav_links:
      Git: /git/
-     GitHub: https://github.com/pfork
      Twitter: https://twitter.com/pitchf___
 
 pages:

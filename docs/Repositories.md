@@ -1,6 +1,12 @@
 ## Repositories
 
-Project PITCHFORK is compartmentalized into the following main repositories
+Project PITCHFORK uses their own git server for version control on
+this site here under [/git](/git), as a secondary git site we also
+use [github](https://github.com/pfork/) on github you can send pull
+requests, open issues and review the code. The primary git server will
+automatically push new commits via githooks to github.
+
+Project PITCHFORK is compartmentalized into the following main repositories.
 
 - [hardware](../git/hardware/) Hardware kicad files
 - [firmware](../git/firmware/) The firmware - the 3rd-party crypto has been broken out to facilitate better reviews and re-use into submodules:
