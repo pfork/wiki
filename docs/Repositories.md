@@ -18,3 +18,27 @@ Project PITCHFORK is compartmentalized into the following main repositories
 These repos are hosted at pitchfork.ist, but secondary repos also
 exist at https://github.com/pfork - here you can also open issues or
 review the code.
+
+
+## Recommended directory layout
+
+```
+  hardware/         # hardware
+  toolchain/        # toolchain
+  src/              # firmware
+     lib/
+        libsodium/  # libsodium [note1]
+        liblzg/     # liblzg [see note1]
+        libopencm3/ # libopencm3 [see note1]
+        newhope/    # newhope-cm3 [see note2]
+        scalarmult/ # scalarmult [see note2]
+        sphincs/    # pitchforkedsphincs [see note2]
+        xeddsa/     # xeddsa  [see note2]
+     tests/         # tests
+   software/        # software
+   wiki/            # wiki
+```
+
+note1: this can be setup manually, or using setup.sh found in the root of the firmware repo
+
+note2: these are submodules that should be automatically populated
