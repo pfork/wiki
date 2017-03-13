@@ -78,3 +78,24 @@ enable dbus for the pitchfork in `/etc/udev/rules.d/40-pitchfork.rules`
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", GROUP="plugdev", MODE="0660"
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", GROUP="plugdev", MODE="0660"
 ```
+
+## setting your personal firmware signature key
+
+The PITCHFORK has a master signing public key which authorizes any
+firmware produced by team PITCHFORK, however a more technical-minded
+user might want to create their own firmware. To allow the custom
+firmware to boot (assuming it verifies the signature) or normal
+firmware upgrade process to work the user has to set their own
+signature verification key. These verification keys are stored in a
+one-time-programmable area, once set, they cannot be changed.
+
+1. Generate your key on your computer using
+   `../tools/createsignkey.py master.key`
+2. Make a secure backup of the master.key, you will need it whenever
+   you want to flash your own signature verified firmware.
+3. Store it to your one-time-programmable area by taking the output of
+   step1 (the line which starts with `const unsigned char pk`)
+4. change tools/store-key.c pk to the line from step 2.
+5. change tools/store-key.c block from 0 to 1.
+6. compile it
+7. run the resulting binary in RAM using a JTAG debugger.
