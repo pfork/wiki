@@ -3,11 +3,12 @@ docs_dir: docs
 site_description: public wiki for the PITCHFORK!!5! project
 copyright: 2017 (c) team PITCHFORK & contributors, CC-By-Sa 3.5
 theme: alabaster
-#theme_dir: alabaster
+theme_dir: custom_theme
 site_dir: /var/www/wiki
 markdown_extensions:
   - wikilinks
   - codehilite
+  - toc(permalink=true)
 
 pages:
   - Home: 'index.md'
@@ -24,3 +25,4 @@ pages:
            - 'Nokia3310 form-factor': 'nokia.md'
            - 'Testing the hardware': 'Hardware_testing.md'
            - 'Hardware measurements': "HW_measurements.md"
+  - Thanks: "Thanks.md"

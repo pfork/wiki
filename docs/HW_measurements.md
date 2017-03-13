@@ -102,6 +102,7 @@ Unfortunately the INRIA reference implementation does not produce any
 entropy:
 
 ```
+:::c
 #define HAVEGED_LOOP if (A==0) A++; else A--; \
     Entropy[K] = (Entropy[K] << 5) ^ (Entropy[K] >> 27) ^ \
       hardtick()^(Entropy[(K + 1) & (SIZEENTROPY - 1)] >> 31); \
@@ -147,9 +148,12 @@ measurements to be published, see `tests/rng`.
 
 ## Timing measurements
 ### random generation
-    4 iterations of double 32 byte random extractions
-    take in total: 0.09s, for a total of 0.011s / 32byte
+
+4 iterations of double 32 byte random extractions take in total:
+0.09s, for a total of 0.011s / 32byte
+
 ```
+:::c
 void test(void) {
   unsigned char e1[crypto_scalarmult_curve25519_BYTES];
   unsigned char e2[crypto_scalarmult_curve25519_BYTES];
@@ -173,11 +177,15 @@ void test(void) {
 ```
 
 ### scalarmult
-    0.33s/mult or 5.42s for 16 multiplications
-    651378692, 651378964, 651378623, 651378818, 651378728, 651378823, 651378386
-    651378770, 651378609, 651378691, 651378663, 651378763, 651378403, 651378506
 
 ```
+0.33s/mult or 5.42s for 16 multiplications
+651378692, 651378964, 651378623, 651378818, 651378728, 651378823, 651378386
+651378770, 651378609, 651378691, 651378663, 651378763, 651378403, 651378506
+```
+
+```
+:::c
 void test(void) {
   unsigned char e1[crypto_scalarmult_curve25519_BYTES];
   unsigned char e2[crypto_scalarmult_curve25519_BYTES];
@@ -212,6 +220,7 @@ void test(void) {
 ### synthetic encryption (crypto_secretbox)
 test code was:
 ```
+:::c
 #define BUF_SIZE 32768
 
 void test(void) {
@@ -238,6 +247,7 @@ void test(void) {
 ```
 
 Readings of len variable via JTAG result in:
+
 ```
 97330044, 97329841, 97329977, 97329792, 97329907, 97329856, 97329965,
 97329903, 97329916, 97329794, 97329964, 97329972, 97330009, 97329997,

@@ -63,7 +63,7 @@ CFLAGS='-DNDEBUG -mthumb -mcpu=cortex-m3 -fno-strict-overflow -mno-unaligned-acc
 [pysodium](https://github.com/stef/pysodium) is used as a frontend for libsodium during the build of the firmware, install it globally or in your virtualenv
 
 ```
-    pip install pysodium
+pip install pysodium
 ```
 
 also install libsodium on your host, the normal OS packages should be ok, e.g:
