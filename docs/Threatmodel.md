@@ -57,7 +57,7 @@ simple tools.
 
 ## Attacks from the host
 
-### malwared host leaks plaintext
+### Malwared host leaks plaintext
 - Attack Vector: the host device (smartphone, PC, laptop, etc) is
   backdoored and malware is realtime leaking plaintext before or
   after encryption on the PITCHFORK
@@ -71,7 +71,7 @@ simple tools.
 - Impact: compromise of plaintext messages seen on compromised host
   device.
 
-### malwared host doing power analysis
+### Malwared host doing power analysis
 - Attack Vector: the host device (smartphone, PC, laptop, etc) is
   backdoored and malware is attacking the PITCHFORK over the USB
   interface attempting to recover key material using power
@@ -85,7 +85,7 @@ simple tools.
   measureable consumption information.
 - Impact: possibly full compromise of one or more keys.
 
-### malwared host attacking for code execution
+### Malwared host attacking for code execution
 - Attack Vector: the host device (smartphone, PC, laptop, etc) is
   backdoored and malware in full knowledge of the free software
   source of the PITCHFORK is attacking the PITCHFORK over the USB
@@ -107,7 +107,7 @@ simple tools.
       PITCHFORK from the USB port when not neccessary.
 - Impact: possibly full compromise of one or more keys.
 
-### backdoored SDcard firmware attacking for code execution
+### Backdoored SDcard firmware attacking for code execution
 - Attack Vector: backdoored SD card firmware attempting to gain
   code execution on the PITCHFORK.
 - Adversary Capability: limited availability to the adversary and
@@ -115,7 +115,7 @@ simple tools.
 - Mitigations: same as USB interface code-exec mitigations
 - Impact: possibly full compromise of one or more keys.
 
-### malicious filesystem on SDcard attacking for code execution
+### Malicious filesystem on SDcard attacking for code execution
 - Attack Vector: malicious FATFS image on an SD card attempting to
   gain code execution on the PITCHFORK.
 - Adversary Capability: assumed to be possible to develop for the
@@ -184,7 +184,7 @@ simple tools.
     physical contact, even for example when going to a sauna.
 - Impact: possible compromise of encrypted keys.
 
-### audio side-channel attack on master-key entry
+### Audio side-channel attack on master-key entry
 - Attack Vector: an attacker in audio range can attempt to record the
   clicks the buttons make when entering a passcode.
 - Adversary Capability: assumed to be possible to develop for the
@@ -193,7 +193,7 @@ simple tools.
 - Mitigations:
 - Impact: can possibly recover the master passcode for the PITCHFORK
 
-### shoulder-surfing for master-key
+### Shoulder-surfing for master-key
 - Attack Vector: an attacker in visual range can attempt to "shouldersurf"
   the entry of the master passcode.
 - Adversary Capability: assumed to be possible for the
