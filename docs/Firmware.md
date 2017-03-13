@@ -13,7 +13,7 @@ This page attempts to document everything related to the firmware of the PITCHFO
 
 There is a [setup.sh](../git/firmware/tree/setup.sh) in the firmware
 repository, which should prepare your firmware dependencies correctly.
-What this script does, follows below.
+What this script does - follows below.
 
 ### get toolchain
 
