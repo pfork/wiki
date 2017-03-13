@@ -11,6 +11,7 @@ markdown_extensions:
 
 pages:
   - Home: 'index.md'
+  - Threatmodel: 'Threatmodel.md'
   - 'Developer Manual':
        - 'Repositories': 'Repositories.md'
        - 'Firmware': 'Firmware.md'
