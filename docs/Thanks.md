@@ -13,4 +13,4 @@ for their generous contribution to this project.
 
 ![Renewable Freedom Foundation](img/rff.png)
 
-for their generous contribution to this project.
+for their invaluable support of this project.
