@@ -6,7 +6,7 @@ Although we put a lot of effort into making the PITCHFORK secure,
 please allow some time and reviews to pass until generally recommended
 as a cyber-silver-bullet. **Use this product at your own risk.**
 
-## contact
+## Contact
 
 - we have an irc channel #pitchfork on ircnet
 - we have a mailing-list at pitchfork@lists.hsbp.org (send a mail to it to subscribe)
