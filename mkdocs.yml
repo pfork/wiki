@@ -20,7 +20,7 @@ extra:
 pages:
   - Home: 'index.md'
   - About: 'about.md'
-  - Threatmodel: 'Threatmodel.md'
+  - 'Threat model': 'Threatmodel.md'
   - FAQ: 'FAQ.md'
   - 'User Manual': 'User_Manual.md'
   - 'Developer Manual':

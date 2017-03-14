@@ -1,4 +1,4 @@
-# Threatmodel
+# Threat model
 
 PITCHFORK directly protects cryptographic key material from
 adversaries controlling the users environment such as network
