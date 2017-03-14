@@ -106,11 +106,11 @@ A key-exchange can happen over radio.
 A proper key-exchange consists of the following steps:
 
 0. Switch on the radio, using the *radio power switch*.
-1. The parties initiate a Key Exchange (KEX) over RF
-2. The parties visually verify each others identities on the PITCHFORK display
+1. The parties initiate a Key Exchange (KEX) over RF. ![start kex](img/kex-menu.jpg)
+2. The parties visually verify each others identities on the PITCHFORK display ![select peer](img/kex-select-peer.jpg)
 3. PITCHFORK completes the KEX
-4. The parties visually verify using the display that they all have the same secret.
-5. Parties confirm/reject on the PITCHFORK the correctness of the KEX, if they failed they can restart at 1.
+4. The parties visually verify using the display that they all have the same secret. ![verify keys](img/kex-verify.jpg)
+5. Parties confirm/reject on the PITCHFORK the correctness of the KEX, if they failed they can restart at 1. ![store key](img/kex-store-key.jpg)
 6. If parties are finished with KEX they switch of the radio.
 
 ### Host-based KEX
