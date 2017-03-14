@@ -7,6 +7,10 @@ bill cox (waywardgeek), pavol.
 
 ## Special thanks
 
-![NLnet foundation](img/nlnet.gif)
+![NLnet Foundation](img/nlnet.gif)
+
+for their generous contribution to this project.
+
+![Renewable Freedom Foundation](img/rff.png)
 
 for their generous contribution to this project.
