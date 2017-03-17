@@ -11,3 +11,54 @@ computer, but in the future hopefully also on phones.
 - a PITCHFORK
 - a USB cable
 - a host
+- the [host library](../git/software)
+
+## How to use PITCHFORK on the CLI
+
+### Initiate a key-exchange
+
+```
+./pitchfork kex >/tmp/kex
+```
+
+### Respond to a key-exchange request
+
+```
+./pitchfork respond Alice </tmp/kex >/tmp/response
+```
+
+### Finish key-exchange request
+
+```
+./pitchfork end Bob </tmp/response
+```
+
+### XEDDSA signing
+
+```
+echo "sign me" | ./pitchfork sign >/tmp/signature
+```
+
+### XEDDSA signature verification
+
+```
+{cat /tmp/signature; echo "sign me" } | ./pitchfork verify Bob
+```
+
+### shared key encryption
+
+```
+echo 'PITCHFORK!!5!' | ./pitchfork encrypt Bob >/tmp/cipher && ./pitchfork decrypt Bob </tmp/cipher
+```
+
+### Sending axolotl (signal) message
+
+```
+echo '1<3u' | ./pitchfork send Bob >/tmp/ciphertext
+```
+
+### Receiving axolotl (signal) message
+
+```
+./pitchfork recv Alice </tmp/ciphertext
+```
