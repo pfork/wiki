@@ -13,10 +13,9 @@ as a cyber-silver-bullet. **Use this product at your own risk.**
 ## Buttons
 
 The PITCHFORK has 5 buttons, the lone left is the "enter" button, the
-other 4 on the top are the "HJKL" buttons. If you never heard of
+other 4 on the top are the `<jk>` buttons. If you never heard of
 vi-keybindings you can also think of them as the **←** **↓** **↑**
-**→** buttons. The PITCHFORK will call use the following symbols to
-reference the buttons on it's display: "<", "j", "k", ">", "enter"
+**→** buttons.
 
 The buttons are used in 3 different setups.
 
@@ -33,26 +32,79 @@ In this mode the enter button is not used.
 
 ### Entering a Name
 
+![Arcade style text entry](img/id-input-empty.jpg)
+
 This is the classical arcade interface you have all available
-characters on the screen and navigate using the HJKL buttons to the
+characters on the screen and navigate using the `<jk>` buttons to the
 character you want to input. Pressing the enter button adds the
 selected character to the name. You can delete a character by pressing
-the H and the enter button at the same time. If you want to submit
-your input press L and the enter button at the same time. You should
-be asked if your input is correct if it is press the L button to
-accept, the H button to go back to the entry form, or any of the other
-buttons to cancel (TODO verify this cancel)
+the `<` and the enter button at the same time. If you want to submit
+your input press `>` and the enter button at the same time.
+
+You should be asked if your input is correct if it is press the `>`
+button to accept, the `j` or `k` button to go back to the entry form,
+or the `<` button to cancel.
+
+![Confirm/Cancel/Retry](img/confirm-id.jpg)
 
 ### Entering the Master Key
 
 When asked for entering a key the PITCHFORK expects you to play on the
 upper for buttons "guitarhero", that is you enter a sequence of
 "chords". To enter one chord you press and hold a combination of the
-HJKL buttons and when you are confident that your "chord" is correct
+`<jk>` buttons and when you are confident that your "chord" is correct
 you press the enter button briefly, so the PITCHFORK can read the
 "chord". A strong master key should have at least a "melody" of 16
 "chords". When you're finished entering your "melody" you press the
 enter button longer, until the master key input ends.
+
+![unlocking a key](img/unlockkey.jpg)
+
+You can also see in the bottom line the reason for the master key
+query. You should always verify if the reason given by the PITCHFORK
+matches your intent.
+
+## Status Flags
+
+During normal operation the lower left corner of the PITCHFORK
+displays 4 status flags:
+
+![Radio status](img/radio-on-warnings.jpg)
+
+`R` means radio is **ON**, `r` stands for **OFF**, also note there is
+a LED which is powered also warning you, this LED cannot be controlled
+by software only by the physical *Radio Power Switch* to the right of
+the LED.
+
+![Battery flag](img/battery-flag.jpg)
+
+`d` means **discharging**, `c` stands for **charging**
+
+![microSD flag](img/microsd-flag.jpg)
+
+`S` means **card detected**, `s` stands for **card not detected**
+
+![Mode flag](img/mode-flag.jpg)
+
+`C` means **PITCHFORK** mode, `D` stands for **Mass Storage** mode
+
+## Current Operation
+
+Whenever the PITCHFORK is doing something it is displayed in the lower right part of the display:
+
+![Current Operation status line](img/cur-op.jpg)
+
+## Unlocked PITCHFORK
+
+After unlocking a PITCHFORK, the top line starts to blink, signaling
+that the PITCHFORK is **hot**.
+
+![Blinking part if unlocked](img/unlocked.jpg)
+
+The PITCHFORK stays unlocked for about 30 seconds after the last usage
+of the *Master Key*. This means you can perform multiple operations in
+sequence without unlocking for each of those. The key is automatically
+cleared after not being used after the 30 second time-out.
 
 ## Boot sequence
 When a PITCHFORK is switched on it verifies the firmware signature and
@@ -66,11 +118,6 @@ TODO needed pictures
     - incorrect
 
 ## Initialization
-TODO needed pictures
-- initialization
-    - info screen1
-    - info screen2
-    - name input
 A PITCHFORK should be uninitialized when you first switch it on -
 until you initialize it. Only then can you use it's cryptographic
 functions.
@@ -86,19 +133,29 @@ initialize it.
 The PITCHFORK ask if we want to initialize, we can accept this by
 pressing the ">" button.
 
+![permission to initialize](img/id-init-query.jpg)
+
 ### Step 2 - input howto
 The PITCHFORK reminds us how to use the following input field.
 
+![arcade button help](img/id-info.jpg)
+
 ### Step 3 - Entering the Name
+
+![arcade input done](img/id-input-done.jpg)
 
 ### Step 4 - verifying the input
 
-## Key-exchange
-TODO needed images
-- menu key exchange
-- listing of peers
-- verification
+![Confirm PITCHFORK identity](img/confirm-id.jpg)
 
+### Initialized PITCHFORK
+
+An initialized PITCHFORK always displays its identity in the upper
+right corner of the display:
+
+![PITCHFORK identity](img/pitchfork-id.jpg)
+
+## Key-exchange
 A key-exchange can happen over radio.
 
 ### Radio KEX
@@ -132,12 +189,12 @@ forfeiting detection of active man-in-the-middle attacks.
 5. Alice finishes the KEX by processing
    `./pitchfork end Bob </tmp/response`
 
-### optimal use
+### Optimal use
  - meet in a well-shielded place (e.g. underground-tunnel, just
    kidding a pub or park is good enough)
  - establishing a channel by issuing a pre-loaded PITCHFORK
 
-## encryption
+## Encryption
 
 There is 3 kinds of encryption modes possible.
 
@@ -157,9 +214,9 @@ Steps to encrypt a message/file/anonymous message
 1. on a trusted host encrypt the plaintext.
 2. using a USB stick or sd card transfer the ciphertext to a host for transmission
 3. transmit the ciphertext.
-4. destroy the usbstick/sdcard.
+4. destroy the USB stick/sd card.
 
-## decryption
+## Decryption
 
 There is 3 kinds of encryption modes possible, each has a way do
 decrypt the encrypted data.
@@ -182,7 +239,7 @@ Steps to decrypt a message/file/anonymous message
 2. jump airgap via cdrom, or printing the ciphertext using optar scanning it in.
 3. on the trusted host decrypt the plaintext.
 
-## signing
+## Signing
 
 The PITCHFORK supports 2 kinds of signatures short signatures that are
 less than 100 bytes, and post-quantum signatures that are quite big,
@@ -197,7 +254,7 @@ post-quantum signatures are broken).
 4. if the PITCHFORK is locked, unlock it with your master-key.
 5. When done disconnect the PITCHFORK and turn it off.
 
-## signature verification
+## Signature verification
 
 The PITCHFORK supports 2 kinds of signatures short signatures that are
 less than 100 bytes, and post-quantum signatures that are quite big,
@@ -213,12 +270,12 @@ post-quantum signatures are broken).
 4. if the PITCHFORK is locked, unlock it with your master-key.
 5. When done disconnect the PITCHFORK and turn it off.
 
-## key-management
+## Key-management
 You can have the same master-key for all keys, or you can have a
 different key for each of your contacts. The latter is safer, but
 means remembering more "melodies".
 
-## firmware upgrade
+## Firmware upgrade
 
 The firmware on the PITCHFORK can be easily upgraded, this needs to be
 initiated physical on the PITCHFORK itself, which switches to a
@@ -231,12 +288,9 @@ different mode to receive and flash the firmware.
 4. When successful reboot into your new firmware, else find someone
    with a JTAG debugger.
 
-## factory resetting the pitchfork
+## Factory resetting the pitchfork
 
 You can erase the full keystore from the main menu, by selecting
-"Erase Keystore", this will delete all data, except for the public
-master signing key and your personal firmware signature key. This will
-put the PITCHFORK in an uninitialized state.
-
-TODO picture: "Erase Keystore"
-
+"Erase Keystore", this will delete all data, except for the factory
+master signing key and your personal firmware signature key (if you
+stored it). This will put the PITCHFORK in an uninitialized state.
