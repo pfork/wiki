@@ -15,6 +15,10 @@ computer, but in the future hopefully also on phones.
 
 ## How to use PITCHFORK on the CLI
 
+This front-end (and the library) are even more experimental than the
+rest of the project. Please contribute, or allow some time to
+fix/finish things up here.
+
 ### Initiate a key-exchange
 
 ```
