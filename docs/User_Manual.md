@@ -293,5 +293,5 @@ different mode to receive and flash the firmware.
 You can erase the full keystore from the main menu, by selecting
 "Erase Keystore", this will delete all data, except for the factory
 master signing key and your personal firmware signature key
-([if you stored it](wiki/Firmware/#setting-your-personal-firmware-signature-key)). This
+([if you stored it](Firmware/#setting-your-personal-firmware-signature-key)). This
 will put the PITCHFORK in an uninitialized state.
