@@ -2,13 +2,18 @@
 
 The following functionality does not work correctly:
 
-## firmware signature verification
+## Firmware signature verification
 
 After some recent rewrite of the crypto ops, this was not working and had to be disabled as a workaround.
 
 ## Sphincs signatures
 
 Signatures made by the pitchfork cannot be verified by the host library.
+
+## Proper handling of key IDs in key-exchange with host library
+
+The participant names in the key-exchange should be part of the
+exchange (and also of the AEAD), and not explicit on the command line.
 
 ## Firmware update does not provide user feedback
 
