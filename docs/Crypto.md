@@ -1,6 +1,7 @@
 # Cryptographic specification
 
 The goals of the original design were to attempt to
+
 - get rid of all fingerprintable metadata,
 - go full post-quantum,
 
