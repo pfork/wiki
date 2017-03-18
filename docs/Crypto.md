@@ -46,7 +46,7 @@ performing 3 scalar multiplications on 2 pairs of elliptic keys, it
 concatenates the 3 products and hashes them into the final key.
 
 The PITCHFORK
-[modifies](http://l6jhsd5aflooopjj.onion/git/firmware/tree/crypto/axolotl.c#n70) (axolotl.c/triple_dh)
+[modifies](../git/firmware/tree/crypto/axolotl.c#n70) (axolotl.c/triple_dh)
 this by introducing a 4th element hashed into the final key by
 performing in parallel to the 3 multiplications also a New Hope
 post-quantum key exchange, which produces also a shared secret of 32
@@ -61,13 +61,13 @@ from the shared secret, which is displayed using [pgp-words](https://en.wikipedi
 
 ## Key storage
 
-Key material is stored using [cwrite](http://l6jhsd5aflooopjj.onion/git/firmware/tree/crypto/pf_store.c#n83),
+Key material is stored using [cwrite](../git/firmware/tree/crypto/pf_store.c#n83),
 a simple function encrypting it's input using the master key queried
 from the PITCHFORK owner and run through the generichash-based PBKDF2.
 
 ## Encryption
 
-Three encryption modes are provided in [pitchfork.c](http://l6jhsd5aflooopjj.onion/git/firmware/tree/crypto/pitchfork.c):
+Three encryption modes are provided in [pitchfork.c](../git/firmware/tree/crypto/pitchfork.c):
 
 - simple shared secret-based encryption using crypto_secretbox,
 - uni-directional encryption for whistle-blowing, leaking,
@@ -139,11 +139,11 @@ Random bytes
 are [generated](../git/firmware/tree/crypto/randombytes_pitchfork.c)
 by `crypto_stream_salsa20`, which is keyed by the entropy pool.
 
-The entropy pool/mixer [implementation](http://l6jhsd5aflooopjj.onion/git/firmware/tree/crypto/mixer.c) is taken from the linux kernel,
+The entropy pool/mixer [implementation](../git/firmware/tree/crypto/mixer.c) is taken from the linux kernel,
 it mixes three independent entropy sources:
 
-- the STM32F2xx [internal RNG](http://l6jhsd5aflooopjj.onion/git/firmware/tree/core/rng.c) - providing 32bits of entropy - if needed - every 40 cycles
+- the STM32F2xx [internal RNG](../git/firmware/tree/core/rng.c) - providing 32bits of entropy - if needed - every 40 cycles
 - Two miscalibrated ADCs reading [reference voltage](../git/firmware/tree/core/adc.c#n103) and [internal temperature](../git/firmware/tree/core/adc.c#n91).
-- An [external entropy](../git/firmware/tree/core/xentropy.c) source based on [infnoise - The world's easiest TRNG to get right](https://github.com/waywardgeek/infnoise)
+- An [external entropy](../git/firmware/tree/core/xentropy.c) source based on [infnoise](https://github.com/waywardgeek/infnoise) - The world's easiest TRNG to get right
 
 
