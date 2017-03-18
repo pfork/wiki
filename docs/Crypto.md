@@ -11,6 +11,10 @@ The goals of the original design were to attempt to
 
 ## Changes to the algorithms
 
+Although we tried to avoid to invent an new crypto, in some cases
+changes where necessary, in some other cases we failed marginally and
+invite reviews to validate the "inventions".
+
 ### One hash
 
 Some algorithms used in the PITCHFORK used some variant of SHA, some
