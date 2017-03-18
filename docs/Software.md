@@ -11,7 +11,17 @@ computer, but in the future hopefully also on phones.
 - a PITCHFORK
 - a USB cable
 - a host
-- the [host library](../git/software)
+
+## Building the library/CLI
+
+Clone the [host library](../git/software)
+```
+# install dependencies
+sudo apt-get install libsodium-dev libusb-1.0-0-dev
+git clone https://pitchfork.ist/git/software.git pitchfork
+cd pitchfork
+make
+```
 
 ## How to use PITCHFORK on the CLI
 
