@@ -3,7 +3,7 @@
 The following persons/groups have made essential contributions to project
 PITCHFORK: Vic, asciimoo, dnet, the r0ket team, peter schwabe,
 boldx, roland, atoth, jz, mo, viola, peter stuge, erdem alkim, kares,
-bill cox (waywardgeek), pavol.
+bill cox (waywardgeek), pavol, holgi, erich.
 
 ## Special thanks
 
