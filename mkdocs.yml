@@ -32,5 +32,6 @@ pages:
            - 'Nokia3310 form-factor': 'nokia.md'
            - 'Testing the hardware': 'Hardware_testing.md'
            - 'Hardware measurements': "HW_measurements.md"
+  - "Crypto": "Crypto.md"
   - Known Bugs: "Bugs.md"
   - Thanks: "Thanks.md"
