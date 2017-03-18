@@ -4,6 +4,10 @@ The goals of the original design were to attempt to
 
 - get rid of all fingerprintable metadata,
 - go full post-quantum,
+- support forward secrecy modes,
+- provide means to stay anonymous,
+- use small public keys that can be shared even in tweets,
+- provide signatures for software packages.
 
 ## Changes to the algorithms
 
