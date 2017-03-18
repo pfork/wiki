@@ -66,3 +66,20 @@ echo '1<3u' | ./pitchfork send Bob >/tmp/ciphertext
 ```
 ./pitchfork recv Alice </tmp/ciphertext
 ```
+
+### Signing with sphincs
+**currently broken**
+```
+echo "sign me" | ./pitchfork pqsign >/tmp/pqsign
+```
+
+### Verifying sphincs signatures
+**currently broken**
+
+This operation does not need a connected PITCHFORK. However it needs
+the signers public key. In this example the signers public key is
+stored in a file called `pqbob`:
+
+```
+{ cat pqbob; cat /tmp/pqsign; echo "sign me"} | ./pitchfork pqverify
+```
