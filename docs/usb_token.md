@@ -6,6 +6,8 @@
 
 ![schema](img/gh-scheme.png)
 
+[svg](img/gh-schema.svg) [pdf](img/gh-schema.pdf)
+
 ## PCB
 
 The various components on the board are laid out in the following way.
