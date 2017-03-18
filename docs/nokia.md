@@ -6,6 +6,8 @@
 
 ![schema](img/nokia-scheme.png)
 
+[svg](img/nokia.svg) [pdf](img/nokia.pdf)
+
 ## Bugs in the latest revision
 
 The buttons are badly produced and do not function. :/
