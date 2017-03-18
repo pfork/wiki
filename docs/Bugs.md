@@ -15,6 +15,10 @@ Signatures made by the pitchfork cannot be verified by the host library.
 The participant names in the key-exchange should be part of the
 exchange (and also of the AEAD), and not explicit on the command line.
 
+## Pad encrypted blocks
+
+To mitigate truncation attacks the encryption needs to be padded.
+
 ## Firmware update does not provide user feedback
 
 Simple UI fix necessary.
