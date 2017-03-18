@@ -8,7 +8,7 @@ We have a [wikipage](Threatmodel.md) on this (which you should definitely read!)
 ## How is this different from my yubikey neo/cryptostick/nitrokey/etc?
 The PITCHFORK uses a powerful ARM Cortex-M3 processor for all operations, while the tools mentioned all are based on smartcards.
 
-## Why not use a smartcard based design the, if everyone does that?
+## Why not use a smartcard based design, if everyone does that?
 The code in smartcards is not transparent. You cannot know what kind of backdoors and bugs are in there.
 
 ## But smartcards are better protected against physical attacks.
