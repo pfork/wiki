@@ -97,6 +97,12 @@ Also install libsodium on your host, the normal OS packages should be ok, e.g:
 apt-get install libsodium
 ```
 
+If you get build errors when linking the signer, complaining about a
+few missing symbols starting with `crypto_core_curve25519_ref10_`,
+make sure that you have a more recent version than 1.0.8 of
+libsodium. On debian related systems the version is misleading and
+despite claiming 1.0.11 it seemingly still 1.0.8 or earlier.
+
 ### Setting up dbus rules for correct permissions
 
 enable dbus for the pitchfork in `/etc/udev/rules.d/40-pitchfork.rules`
