@@ -107,6 +107,12 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", GROUP="plug
 
 ## Setting your personal firmware signature key
 
+Before compiling the firmware, you need to create your personal
+*firmware signing key*. This will be used to sign the firmware you
+compile. During boot the signature is checked if it is signed either
+by the main developer signing key, or your key that you're about to
+generate.
+
 The PITCHFORK has a master signing public key which authorizes any
 firmware produced by team PITCHFORK, however a more technical-minded
 user might want to create their own firmware. To allow the custom
@@ -115,8 +121,8 @@ firmware upgrade process to work the user has to set their own
 signature verification key. These verification keys are stored in a
 one-time-programmable area, once set, they cannot be changed.
 
-1. Generate your key on your computer using
-   `../tools/createsignkey.py master.key`
+1. Generate your key on your computer in the firmware root using
+   `./tools/createsignkey.py signer/master.key`
 2. Make a secure backup of the master.key, you will need it whenever
    you want to flash your own signature verified firmware.
 3. Store it to your one-time-programmable area by taking the output of
