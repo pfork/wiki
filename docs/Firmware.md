@@ -22,6 +22,11 @@ toolchain gitrepo, or you can download one from [launchpad](https://launchpad.ne
 Set your PATH to include the `bin` directory of this cross-compiler, e.g.:
 `export PATH="$PATH:$(realpath toolchain/gcc-arm-none-eabi-5_4-2016q2/bin/)"`
 
+If you compile using tchain.sh, make sure you install the dependencies:
+```
+apt-get install gmp-dev mpfr-def mpc-dev texinfo
+```
+
 ### clone&build libopencm3
 
 Some of the USB handling depends on [libopencm3](http://libopencm3.org)
