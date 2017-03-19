@@ -33,6 +33,8 @@ This is a tricky one, a strong KDF should both be space- and
 time-resistent, however the Cortex-M is neither very fast nor has it
 plenty of RAM. The recommended (and chosen) solution is a generichash-based (blake2b)
 [implementation](../git/firmware/tree/crypto/pbkdf2_generichash.c) of PBKDF2 (SP 800-132).
+However with only 5000 iterations, which is noticeable on the the
+PITCHFORK, but does not significantly impact any purpose-build hardware.
 
 ## Key exchange
 
