@@ -12,10 +12,12 @@ This page attempts to document everything related to the firmware of the PITCHFO
 ## Software Requirements
 
 First of all you need a cross-compiler, and then you need to build the
-dependencies and the firmware itself with it.
+dependencies and the firmware itself with it. Either you download a
+precompiled one, or use the bundled [tchain.sh](#get-toolchain) script mentioned below.
 
 Since some dependencies are included as submodules you should use
 `--recursive` when cloning the firmware repository, like so:
+
 ```git clone --recursive https://pitchfork.ist/git/firmware.git```
 
 There is a few other dependencies which are not handled as submodules.
