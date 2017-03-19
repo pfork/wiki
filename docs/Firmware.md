@@ -92,6 +92,8 @@ And again, you shoulde use the cross-compiler toolchain to build this.
 pip install pysodium
 ```
 
+### Install pysodium
+
 Also install libsodium on your host, the normal OS packages should be ok, e.g:
 ```
 apt-get install libsodium
