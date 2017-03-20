@@ -13,3 +13,10 @@ as a cyber-silver-bullet. **Use this product at your own risk.**
 - we have a website at https://pitchfork.ist and http://l6jhsd5aflooopjj.onion
 - you can submit code reviews and pull-requests to https://github.com/pfork
 - we tweet at @pitchf___ (3 underscores)
+
+## External docs
+
+Lots of datasheets and 3rd party documentation has been used in the
+making of the PITCHFORK, you can download
+an [essential bundle](/3rd-party-docs.zip) containing the most
+important ones.
