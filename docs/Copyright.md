@@ -18,16 +18,7 @@ compatible licenses, see the following sections:
 ## Low-level functions
 
  - memcpy: bsd,
- - memset: newlib.
-
-Unclear sources are:
-
- - memcmp
- - memmove
- - itos
-
-These possibly need to be replaced with traceable implementations, and
-would benefit from some optimizations.
+ - memset, memcmp, memmove: newlib.
 
 ## USB mass storage controller & SDIO driver
 
