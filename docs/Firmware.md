@@ -38,7 +38,7 @@ export PATH="$PATH:$(realpath toolchain/gcc-arm-none-eabi-5_4-2016q2/bin/)"
 If you compile using tchain.sh, make sure you install the dependencies
 for building gcc:
 ```
-apt-get install gmp-dev mpfr-def mpc-dev texinfo
+apt-get install libgmp-dev libmpfr-dev libmpc-dev texinfo
 ```
 
 ### Clone&build libopencm3
