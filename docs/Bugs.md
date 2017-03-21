@@ -29,3 +29,7 @@ These bugs are documented in their respective sections:
 
 - [USB token](usb_token/#bugs-in-the-latest-revision)
 - [Nokia 3310](nokia/#bugs-in-the-latest-revision)
+
+## Legal issues
+
+see the [licensing issues](Copyright)
