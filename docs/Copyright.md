@@ -16,10 +16,12 @@ There is a few components which need clarification or replacement with
 compatible licenses, see the following sections:
 
 ## Low-level functions
+
  - memcpy: bsd,
  - memset: newlib.
 
 Unclear sources are:
+
  - memcmp
  - memmove
  - itos
