@@ -34,4 +34,5 @@ pages:
            - 'Hardware measurements': "HW_measurements.md"
   - "Crypto": "Crypto.md"
   - Known Bugs: "Bugs.md"
+  - "License issues": "Copyright.md"
   - Thanks: "Thanks.md"
