@@ -19,10 +19,6 @@ exchange (and also of the AEAD), and not explicit on the command line.
 
 To mitigate truncation attacks the encryption needs to be padded.
 
-## Firmware update does not provide user feedback
-
-Simple UI fix necessary.
-
 ## Hardware bugs documented in the the hardware sections
 
 These bugs are documented in their respective sections:
