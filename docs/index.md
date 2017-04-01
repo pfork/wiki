@@ -18,5 +18,5 @@ as a cyber-silver-bullet. **Use this product at your own risk.**
 
 Lots of datasheets and 3rd party documentation has been used in the
 making of the PITCHFORK, you can download
-an [essential bundle](/3rd-party-docs.zip) containing the most
+an [essential bundle](../3rd-party-docs.zip) containing the most
 important ones.
