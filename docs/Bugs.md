@@ -2,10 +2,6 @@
 
 The following functionality does not work correctly:
 
-## Firmware signature verification
-
-After some recent rewrite of the crypto ops, this was not working and had to be disabled as a workaround.
-
 ## Sphincs signatures
 
 Signatures made by the pitchfork cannot be verified by the host library.
