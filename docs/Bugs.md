@@ -2,10 +2,6 @@
 
 The following functionality does not work correctly:
 
-## Sphincs signatures
-
-Signatures made by the pitchfork cannot be verified by the host library.
-
 ## Proper handling of key IDs in key-exchange with host library
 
 The participant names in the key-exchange should be part of the
