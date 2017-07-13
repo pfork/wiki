@@ -1,7 +1,7 @@
 ## Repositories
 
 Project PITCHFORK uses their own git server for version control on
-this site here under [/git/](/git/), as a secondary git site we also
+this site here under [/git/](../git/), as a secondary git site we also
 use [github](https://github.com/pfork/) on github you can send pull
 requests, open issues and review the code. The primary git server will
 automatically push new commits via githooks to github.
