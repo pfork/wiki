@@ -5,7 +5,8 @@ This page attempts to document everything related to the software of the PITCHFO
 In this project the term "software" pertains to everything running on
 the other end of the USB connection. Currently this means a personal
 computer, but in the future hopefully also on phones. Other interfaces
-like PKCS#11 and gnupg chameleons are planned also in the near future.
+like PKCS#11 are planned also in the future, but first PKCS#11 needs
+to support the mechanisms used by the PITCHFORK.
 
 What the hell is a *gnupg chameleon* you might ask, and rightly
 so. Its basically a commandline tool that supports the "same"
