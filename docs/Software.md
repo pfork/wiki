@@ -8,15 +8,6 @@ computer, but in the future hopefully also on phones. Other interfaces
 like PKCS#11 are planned also in the future, but first PKCS#11 needs
 to support the mechanisms used by the PITCHFORK.
 
-What the hell is a *gnupg chameleon* you might ask, and rightly
-so. Its basically a commandline tool that supports the "same"
-commandline parameters as gnupg, but transparently dispatches the
-requests to other crypto backends like the pitchfork, opmsg, gnupg
-itself or other tools like signal-cli. This allows one to replace the
-original gnupg executable on a system with the gnupg chameleon which
-should provide support in mail programs like enigmail or mutt without
-changing the mail programs themselves.
-
 ## Hardware Requirements
 
 - a PITCHFORK
