@@ -16,7 +16,7 @@ to support the mechanisms used by the PITCHFORK.
 
 ## Building the library/CLI
 
-Clone the [host library](../git/software)
+Clone the [host tools](../git/software)
 ```
 # install dependencies
 sudo apt-get install libsodium-dev libusb-1.0-0-dev
